@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Courier</title>
+  <link rel="stylesheet" href="courier.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select Courier</h1>
+    <ul id="courier-list">
+      <!-- Couriers will be dynamically generated -->
+    </ul>
+    <div id="courier-rating" style="display: none;">
+      <label for="rating">Rate Courier:</label>
+      <select id="rating" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button onclick="rateCourier()">Submit Rating</button>
+    </div>
+  </div>
+
+  <script src="courier.js"></script>
+</body>
+</html>
